@@ -312,7 +312,8 @@ main #ourservices article>div .fas {
 }
 
 main #ourservices .grid article {
-    
+    border-bottom: 1px solid;
+    padding: 0.5px;
 }
 
 .fa-truck{
