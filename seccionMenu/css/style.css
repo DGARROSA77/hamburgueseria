@@ -30,10 +30,6 @@ img{
     display: block;
 }
 
-main p {
-    color:#666;
-    line-height: 1.25em;
-}
 
 body{
     font-family: var(--fuente-principal);
@@ -47,9 +43,15 @@ body{
 
 /* Inicio header */
 
+header {
+    margin: -8px;
+}
+
 header .nav-top {
     background-color: var(--color-secundario);
     padding: calc(var(--padding) * 2) 0px;
+    width: 100%;
+    
     
 }
 
@@ -73,12 +75,14 @@ header .nav-top .container {
 
 header nav {
     padding: calc(var(--padding)*2);
+    
 }
 
 header nav .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 
@@ -132,12 +136,13 @@ header nav .menu li .activo, header nav .menu li a:hover {
 
 footer {
     background-color: var(--color-secundario);
-    padding: calc(var(--padding) * 2)0px;
+    padding: calc(var(--padding) * )0px;
     color: white;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
+    margin: -8px;
 }
 
 footer a {
@@ -162,215 +167,7 @@ footer a:hover {
 /* Final Footer */
 
 
-/* Inicio HERO */
 
-.hero{
-    background-image: url(../images/fondo.jpg);
-    height: 60vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    display: flex;
-    background-color: #777;
-    background-blend-mode: multiply;
-}
-
-.hero .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 90%;
-}
-
-.hero h1{
-    font-family: var(--fuente-secundaria);
-    font-size: 2.25em;
-}
-
-.hero h2 {
-    color: var(--color-principal);
-    font-size: 1.25em;
-    margin: var(--margingrid)0px;
-}
-
-.hero p {
-    font-size: 1.15em;
-}
-
-.hero .social li {
-    display: inline-block;
-    margin-right: var(--margingrid);
-    font-size: 2em;
-}
-
-.hero .social li a {
-    color: white;
-}
-
-.boton {
-    background-color:var(--color-principal) ;
-    color: white;
-    display: inline-block;
-    text-decoration: none;
-    padding: 1.15em;
-    margin: var(--margingrid)0px;
-    border: 1px solid var(--color-principal);
-}
-
-.boton:hover{
-    background-color: transparent;
-    border: 1px solid var(--color-principal);
-    color: var(--color-principal);
-}
-
-.boton:hover i {
-    transform: translateX(5px);
-    transition: 0.5s;
-}
-
-
-/* Final HERO */
-
-
-
-/* Inicio OurServices */
-
-main section {
-    padding: 2.125em 1.5em;
-}
-
-main section h2 {
-    color: black;
-    font-family: var(--fuente-secundaria);
-    font-size: 2em;
-    text-align: center;
-}
-
-main section h2 span {
-    color: var(--color-principal);
-}
-
-main section .underline {
-position: relative;
-width: 6.250em;
-margin: 0 auto;
-color: var(--color-principal);
-font-weight: 700;
-text-align: center;
-margin-bottom: var(--margingrid);
-
-}
-
-main section .underline hr {
-    position: absolute;
-    width: 100%;
-    top: -1px;
-    border-color:  var(--color-principal);
-}
-
-
-main #ourservices .grid{
-    display: grid;
-    gap: var(--margingrid);
-}
-
-main section h3 {
-    font-weight: 700;
-    font-size: 1.10em;
-    margin: var(--padding)0;
-}
-
-.enlace {
-    text-decoration: none;
-    padding-top:  var(--padding);
-    display: inline-block;
-    font-weight: 700;
-    color: var(--color-principal);
-
-}
-
-.enlace i {
-    transition: 0.5s;
-}
-
-.enlace:hover i{
-    transform: translate(5px);
-   
-}
-
-main section .grid article{
-    border-bottom: 1px solid #aaa;
-    padding: 1.5em 0;
-}
-
-main #ourservices article>div .fas {
-    color: var(--color-principal);
-    font-size: 1.5em;
-    border: 1px solid var(--color-principal);
-    padding: 0.5em;
-}
-
-main #ourservices .grid article {
-    border-bottom: 1px solid;
-    padding: 0.5px;
-}
-
-.fa-truck{
-    transform: rotateY(180deg);
-}
-
-
-
-
-/* Final OurServices */
-
-
-
-/* Inicio About Us */
-
-main section:last-child{
-    padding-bottom: 90px;
-}
-
-main section h4{
-    margin: var(--margin)0;
-    color: var(--color-principal);
-}
-
-main section .flex {
-    display: flex;
-    flex-direction: column;
-
-}
-
-main .imagen .marco{
-    border: 3px solid var(--color-principal);
-    transform: rotateZ(10deg);
-    transition: 1s;
-
-}
-
-main .imagen .marco img {
-    transform: rotateZ(-10deg);
-    transition: 1s;
-}
-
-main .imagen:hover .marco {
-    transform: rotateZ(0deg);
-}
-
-main .imagen:hover .marco img {
-    transform: rotateZ(0deg);
-}
-
-
-
-
-
-
-
-/* Final About Us */
 
 
 
