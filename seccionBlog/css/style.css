@@ -105,7 +105,8 @@ header nav .hamburguesa div{
 }
 
 header nav ul {
-    width: 100%;      
+    width: 100%;  
+    list-style:none;    
 }
 
 header nav .menu li a{
