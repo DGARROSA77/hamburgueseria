@@ -201,23 +201,34 @@ main section .underline hr {
     border-color:  var(--color-principal);
 }
 
-main section .aside{
-    list-style:none;
-    height: 20px;
-    border-radius: 10px;
-   
+
+main section aside{
+    margin: var(--margingrid);
 }
 
-main section .aside li {
-    color:var(#aaa);
+main section aside ul li {
+    list-style: none;
+
+}
+
+main section aside ul li a {
+    display: block;
+    width: 100%;
     text-decoration: none;
-    padding: 1em;
+    text-align: left;
+    padding: calc(var( --padding)*2);
+    color: #aaa;
     
     
+
+
 }
 
-main section .aside li a:hover {
+main section aside ul li a:hover {
    background-color: var(--color-principal);
+   border-radius: 5px;
+   
+
 }
 
 
@@ -279,3 +290,11 @@ main section .aside li a:hover {
     footer {
         text-align: left
 }
+
+main section aside ul li a {
+    display: block;
+    width: 20%;
+    text-decoration: none;
+    text-align: center;
+    padding: calc(var( --padding)*2);
+    color: #aaa;
