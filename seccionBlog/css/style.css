@@ -167,6 +167,109 @@ footer a:hover {
 
 /* Final Footer */
 
+/* Inicio Our Blogs */
+main section {
+    padding: 2.125em 1.5em;
+    margin: var(--margingrid);
+}
+
+main section h2 {
+    color: black;
+    font-family: var(--fuente-secundaria);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span {
+    color: var(--color-principal);
+}
+
+main section .underline {
+position: relative;
+width: 6.250em;
+margin: 0 auto;
+color: var(--color-principal);
+font-weight: 700;
+text-align: center;
+margin-bottom: var(--margingrid);
+
+}
+
+main section .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    border-color:  var(--color-principal);
+}
+
+
+
+.enlace {
+    text-decoration: none;
+    padding-top:  var(--padding);
+    display: inline-block;
+    font-weight: 700;
+    color: var(--color-principal);
+}
+
+.enlace i {
+    transition: 0.5s;
+}
+
+.enlace:hover i{
+    transform: translate(5px);
+   
+}
+
+main .grid article .fecha{
+    display: flex;
+    background-color: var(--color-principal);
+    opacity: 20px;
+
+}
+
+main .grid {
+    max-width: auto;
+    display: grid;
+    grid-gap:1rem;
+    grid-template-columns: repeat(2,1fr);
+    
+
+}
+
+
+
+
+.grid img {
+    width: 350px;
+    height: 200px;
+    margin-left:-40px;
+    
+}
+
+
+main .grid article{
+    position:relative;
+}
+
+main .ourblogs .grid article .fecha{
+position: absolute;
+width: 5em;
+height: 5em;
+top: 0;
+left: 0;
+background-color: var(--color-principal);
+opacity: 0.7;
+color:white;
+text-align: right;
+
+}
+
+
+
+
+
+/* Final Our Blogs */
 
 
 

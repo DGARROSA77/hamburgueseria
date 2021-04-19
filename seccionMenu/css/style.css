@@ -201,23 +201,69 @@ main section .underline hr {
     border-color:  var(--color-principal);
 }
 
-main section .aside{
-    list-style:none;
-    height: 20px;
-    border-radius: 10px;
+
+main section aside{
+    margin: var(--margingrid);
+    font-family: var(--fuente-principal);
+}
+
+main section aside ul li {
+    list-style: none;
+
+}
+
+main section aside ul li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: left;
+    padding: calc(var( --padding)*2);
+    color: #aaa;
+    
+    
+
+
+}
+
+main section aside ul li a:hover {
+   background-color: var(--color-principal);
+   border-radius: 5px;
+   
+
+}
+
+main section .container #offers{
+    margin: var(--margingrid);
+    font-family: var(--fuente-principal);
+    
    
 }
 
-main section .aside li {
-    color:var(#aaa);
-    text-decoration: none;
-    padding: 1em;
-    
-    
+main section .container #offers h3{
+    text-decoration: underline var(--color-principal) ;
+
+   
 }
 
-main section .aside li a:hover {
-   background-color: var(--color-principal);
+.enlace {
+    text-decoration: none;
+    padding-top:  var(--padding);
+    display: inline-block;
+    font-weight: 700;
+    color: var(--color-principal);
+}
+
+.enlace i {
+    transition: 0.5s;
+}
+
+.enlace:hover i{
+    transform: translate(5px);
+   
+}
+
+ .precio{
+    color: var(--color-principal);
 }
 
 
@@ -260,7 +306,6 @@ main section .aside li a:hover {
       header nav ul {
         width: auto;    
         
-
     }
 
     header nav .menu li {
@@ -278,4 +323,74 @@ main section .aside li a:hover {
 
     footer {
         text-align: left
+}
+
+main section aside ul li a {
+    display: block;
+    width: 20%;
+    text-decoration: none;
+    text-align: center;
+    padding: calc(var( --padding)*2);
+    color: #aaa;
+
+}
+
+    main section .container #offers{
+        margin: var(--margingrid);
+        width: 20%;
+        position: absolute;
+        left: 100px;
+       bottom:50px;
+    }
+
+
+main section .container article {
+   width: 80%;
+   float: right;
+   display:flex;
+   position: relative;
+   bottom: 250px;
+   margin: var(--margingrid);
+   left: 20px;
+   
+   
+}
+
+
+main section .container article h3 {
+    position: relative;
+    margin: var(--margingrid);
+    top: 0;
+    
+
+
+}
+
+main section .container article .precio {
+    position: relative;
+    margin: var(--margingrid);
+    top: 0;
+}
+
+main section .container article p {
+    position: relative;
+    margin: var(--margingrid);
+    top: 60px;
+}
+
+.enlace {
+    position:relative;
+    top: 100px;
+}
+
+main section .container article img{
+    width:200px;
+    height: 160px;
+
+}
+
+main section aside ul li a{
+    text-align: left;
+}
+
 }
