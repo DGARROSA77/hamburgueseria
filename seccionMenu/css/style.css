@@ -1,0 +1,396 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+/* font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif; */
+
+html{
+     /* para generar scroll animados de punto de ancla */
+     scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    /* defino variables que se van a repetir en mi código. */
+    --color-principal: #fa573a;
+    --color-secundario: #21242e;
+    --fuente-principal:'Montserrat',sans-serif;
+    --fuente-secundaria:'Handlee', cursive;
+    --fontsize: 1em;
+    --anchomaximo: 62.750em;
+    --margingrid:1em;
+    --padding: 0.625em;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+body{
+    font-family: var(--fuente-principal);
+    font-size: var(--fontsize);
+}
+
+.container {
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+}
+
+/* Inicio header */
+
+header {
+    margin: -8px;
+}
+
+header .nav-top {
+    background-color: var(--color-secundario);
+    padding: calc(var(--padding) * 2) 0px;
+    width: 100%;
+    
+    
+}
+
+header .nav-top .container {
+    display: flex;
+    justify-content: space-around;
+    }
+
+    header .nav-top a {
+        color:var(--color-principal);
+        text-decoration: none;
+    }
+
+    header .nav-top a span {
+        display: none;
+    }
+
+    header .nav-top a i {
+        font-size: 150%;
+    }
+
+header nav {
+    padding: calc(var(--padding)*2);
+    
+}
+
+header nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+
+header nav .logo img {
+    max-width: 6.250em;
+}
+
+header nav .hamburguesa {
+    /* cursor: pointer; hace que funcione como un enlace y le sale la mano de enlace para clickar. */
+  cursor: pointer;
+  
+}
+
+header nav .hamburguesa div{
+    border-top: 2px solid #aaa;
+    margin-bottom: var(--padding);
+    width: 1.875em;
+   
+    
+}
+
+header nav ul {
+    width: 100%;    
+    list-style:none;
+}
+
+header nav .menu li a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding: calc(var( --padding)*2);
+    color: #aaa;
+    border-bottom: 1px solid #aaa;
+    
+}
+
+header nav .menu li:last-child a {
+    border-bottom: 0;
+}
+
+header nav .menu li .activo, header nav .menu li a:hover {
+    color: var(--color-principal);
+}
+
+
+/* Final header */
+
+
+/* Inicio Footer */
+
+
+footer {
+    background-color: var(--color-secundario);
+    padding: calc(var(--padding) * )0px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: -8px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--color-principal);
+}
+
+
+.flecha a{
+    display: block;
+    color: var(--color-principal);
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    font-size: 300%;
+}
+
+/* Final Footer */
+
+/* Inicio Todays Menu */
+main section {
+    padding: 2.125em 1.5em;
+}
+
+main section h2 {
+    color: black;
+    font-family: var(--fuente-secundaria);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span {
+    color: var(--color-principal);
+}
+
+main section .underline {
+position: relative;
+width: 6.250em;
+margin: 0 auto;
+color: var(--color-principal);
+font-weight: 700;
+text-align: center;
+margin-bottom: var(--margingrid);
+
+}
+
+main section .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    border-color:  var(--color-principal);
+}
+
+
+main section aside{
+    margin: var(--margingrid);
+    font-family: var(--fuente-principal);
+}
+
+main section aside ul li {
+    list-style: none;
+
+}
+
+main section aside ul li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: left;
+    padding: calc(var( --padding)*2);
+    color: #aaa;
+    
+    
+
+
+}
+
+main section aside ul li a:hover {
+   background-color: var(--color-principal);
+   border-radius: 5px;
+   
+
+}
+
+main section .container #offers{
+    margin: var(--margingrid);
+    font-family: var(--fuente-principal);
+    
+   
+}
+
+main section .container #offers h3{
+    text-decoration: underline var(--color-principal) ;
+
+   
+}
+
+.enlace {
+    text-decoration: none;
+    padding-top:  var(--padding);
+    display: inline-block;
+    font-weight: 700;
+    color: var(--color-principal);
+}
+
+.enlace i {
+    transition: 0.5s;
+}
+
+.enlace:hover i{
+    transform: translate(5px);
+   
+}
+
+ .precio{
+    color: var(--color-principal);
+}
+
+
+
+/* Final Todays Menu */
+
+
+
+
+
+
+/* mediaqueries  */
+@media(min-width:600px)  {
+    
+
+    
+    
+
+}
+
+
+@media(min-width:768px) {
+    header .nav-top a span {
+        display: inline;
+        color: white;
+        font-size: 120%;
+        margin-left: 5px;
+    }
+
+    
+        
+}
+
+@media(min-width:1004px){
+   
+    header nav .hamburguesa {
+       display: none;
+      }
+
+      header nav ul {
+        width: auto;    
+        
+    }
+
+    header nav .menu li {
+        display: inline-block
+    }
+
+    header nav .menu li a {
+        padding: 0.5em var(--padding);
+        border-bottom: none;
+    }
+
+    header {
+        box-shadow: 0px 2px 20px gray;
+    }
+
+    footer {
+        text-align: left
+}
+
+main section aside ul li a {
+    display: block;
+    width: 20%;
+    text-decoration: none;
+    text-align: center;
+    padding: calc(var( --padding)*2);
+    color: #aaa;
+
+}
+
+    main section .container #offers{
+        margin: var(--margingrid);
+        width: 20%;
+        position: absolute;
+        left: 100px;
+       bottom:50px;
+    }
+
+
+main section .container article {
+   width: 80%;
+   float: right;
+   display:flex;
+   position: relative;
+   bottom: 250px;
+   margin: var(--margingrid);
+   left: 20px;
+   
+   
+}
+
+
+main section .container article h3 {
+    position: relative;
+    margin: var(--margingrid);
+    top: 0;
+    
+
+
+}
+
+main section .container article .precio {
+    position: relative;
+    margin: var(--margingrid);
+    top: 0;
+}
+
+main section .container article p {
+    position: relative;
+    margin: var(--margingrid);
+    top: 60px;
+}
+
+.enlace {
+    position:relative;
+    top: 100px;
+}
+
+main section .container article img{
+    width:200px;
+    height: 160px;
+
+}
+
+main section aside ul li a{
+    text-align: left;
+}
+
+}
